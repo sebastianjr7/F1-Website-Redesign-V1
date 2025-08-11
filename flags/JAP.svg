@@ -1,0 +1,22 @@
+<svg width="141" height="106" viewBox="0 0 141 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Japan (JP)" clip-path="url(#clip0_16_1236)">
+<g id="Clip path group">
+<mask id="mask0_16_1236" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="141" height="106">
+<g id="a">
+<path id="Vector" d="M0.5 0.5H140.5V105.5H0.5V0.5Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_16_1236)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M-8.25 0.5H149.25V105.5H-8.25V0.5Z" fill="white"/>
+<path id="Vector_3" d="M70.5118 85.6433C88.5375 85.6433 103.15 71.0307 103.15 53.005C103.15 34.9794 88.5375 20.3667 70.5118 20.3667C52.4862 20.3667 37.8735 34.9794 37.8735 53.005C37.8735 71.0307 52.4862 85.6433 70.5118 85.6433Z" fill="#D30000"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_16_1236">
+<rect width="140" height="105" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>
