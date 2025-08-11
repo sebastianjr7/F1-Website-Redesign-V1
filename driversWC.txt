@@ -1,0 +1,194 @@
+<img class="trophyImg" src="F1/other/driversWCTrophyImg.png">
+<table>
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>DRIVER</th>
+            <th>NATIONALITY</th>
+            <th>TEAM</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="redbull">
+            <td>1</td>
+            <td>M.Verstappen</td>
+            <td>
+              <img src="F1/flags/NED.svg"/>
+            </td>
+            <td>Red Bull Racing Honda RBPT</td>
+            <td>314</td>
+          </tr>
+          <tr class="redbull">
+            <td>2</td>
+            <td>S.Perez</td>
+            <td>
+              <img src="F1/flags/MEX.png"/>
+            </td>
+            <td>Red Bull Racing Honda RBPT</td>
+            <td>189</td>
+          </tr>
+          <tr class="astonmartin">
+            <td>3</td>
+            <td>F.Alonso</td>
+            <td>
+              <img src="F1/flags/SPA.png"/>
+            </td>
+            <td>Aston Martin Aramco Mercedes</td>
+            <td>149</td>
+          </tr>
+          <tr class="mercedes">
+            <td>4</td>
+            <td>L.Hamilton</td>
+            <td>
+              <img src="F1/flags/UK.png"/>
+            </td>
+            <td>Mercedes</td>
+            <td>148</td>
+          </tr>
+          <tr class="ferrari">
+            <td>5</td>
+            <td>C.Leclerc</td>
+            <td>
+              <img src="F1/flags/MON.svg"/>
+            </td>
+            <td>Ferrari</td>
+            <td>99</td>
+          </tr>
+          <tr class="mercedes">
+            <td>6</td>
+            <td>G.Russell</td>
+            <td>
+              <img src="F1/flags/UK.png"/>
+            </td>
+            <td>Mercedes</td>
+            <td>99</td>
+          </tr>
+          <tr class="ferrari">
+            <td>7</td>
+            <td>C.Sainz</td>
+            <td>
+              <img src="F1/flags/SPA.png"/>
+            </td>
+            <td>Ferrari</td>
+            <td>92</td>
+          </tr>
+          <tr class="mclaren">
+            <td>8</td>
+            <td>L.Norris</td>
+            <td>
+              <img src="F1/flags/UK.png"/>
+            </td>
+            <td>McLaren Mercedes</td>
+            <td>69</td>
+          </tr>
+          <tr class="astonmartin">
+            <td>9</td>
+            <td>L.Stroll</td>
+            <td>
+              <img src="F1/flags/CAN.svg"/>
+            </td>
+            <td>Aston Martin Aramco Mercedes</td>
+            <td>47</td>
+          </tr>
+          <tr class="alpine">
+            <td>10</td>
+            <td>E.Ocon</td>
+            <td>
+              <img src="F1/flags/FRA.svg"/>
+            </td>
+            <td>Alpine Renault</td>
+            <td>35</td>
+          </tr>
+          <tr class="mclaren">
+            <td>11</td>
+            <td>O.Piastri</td>
+            <td>
+              <img src="F1/flags/AUS.png"/>
+            </td>
+            <td>McLaren Mercedes</td>
+            <td>34</td>
+          </tr>
+          <tr class="alpine">
+            <td>12</td>
+            <td>P.Gasly</td>
+            <td>
+              <img src="F1/flags/FRA.svg"/>
+            </td>
+            <td>Alpine Renault</td>
+            <td>22</td>
+          </tr>
+          <tr class="williams">
+            <td>13</td>
+            <td>A.Albon</td>
+            <td>
+              <img src="F1/flags/THA.svg"/>
+            </td>
+            <td>Williams Mecedes</td>
+            <td>11</td>
+          </tr>
+          <tr class="haas">
+            <td>14</td>
+            <td>N.Hulkenberg</td>
+            <td>
+              <img src="F1/flags/GER.svg"/>
+            </td>
+            <td>Haas Ferrari</td>
+            <td>9</td>
+          </tr>
+          <tr class="alfaromeo">
+            <td>15</td>
+            <td>V.Bottas</td>
+            <td>
+              <img src="F1/flags/FIN.svg"/>
+            </td>
+            <td>Alfa Romeo Ferrari</td>
+            <td>5</td>
+          </tr>
+          <tr class="alfaromeo">
+            <td>16</td>
+            <td>G.Zhou</td>
+            <td>
+              <img src="F1/flags/CHI.svg"/>
+            </td>
+            <td>Alfa Romeo Ferrari</td>
+            <td>4</td>
+          </tr>
+          <tr class="alphatauri">
+            <td>17</td>
+            <td>Y.Tsunoda</td>
+            <td>
+              <img src="F1/flags/JAP.svg"/>
+            </td>
+            <td>AlphaTauri Honda RBPT</td>
+            <td>3</td>
+          </tr>
+          <tr class="haas">
+            <td>18</td>
+            <td>K.Magnussen</td>
+            <td>
+              <img src="F1/flags/DEN.svg"/>
+            </td>
+            <td>Haas Ferrari</td>
+            <td>2</td>
+          </tr>
+          <tr class="williams">
+            <td>19</td>
+            <td>L.Sargeant</td>
+            <td>
+              <img src="F1/flags/USA.png"/>
+            </td>
+            <td>Williams Mecedes</td>
+            <td>0</td>
+          </tr>
+          <tr class="alphatauri">
+            <td>20</td>
+            <td>D.Ricciardo</td>
+            <td>
+              <img src="F1/flags/AUS.png"/>
+            </td>
+            <td>AlphaTauri Honda RBPT</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+        </table>

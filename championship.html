@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Sebastian Morocho">
+  <meta name="description" content="F1 Championship">
+  <meta name="generator" content="vscode">
+  <meta name="keywords" content="F1, Championship">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Championship Standings</title>
+  <link rel="icon" type="image/x-icon" href="F1/other/F1TV2.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="defaultTable()">
+
+  <nav>
+    <ul>
+      <li>
+        <a href="home.html"><img src="F1/other/f1-logo.png" /></a>
+      </li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="driver-card.html">Drivers</a></li>
+      <li><a class="active" href="championship.html">Championship</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <video id="bodyBackground" playsinline autoplay muted loop poster="F1/flags/checkered-flag-poster.png">
+      <source src="F1/flags/checkered-flag.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <a href="championship.html">
+      <h1 class="pageHeader">2023 Championship Standings</h1>
+    </a>
+  </header>
+
+  <main>
+    <section class="buttonSection">
+      <button onclick="displayTeamTable()" class="button activeBtn" id="consChampBtn">
+        Constructors Championship Standings
+      </button>
+      <hr>
+      <button onclick="displayDriverTable()" class="button" id="drivChampBtn">
+        Drivers Championship Standings
+      </button>
+    </section>
+
+    <section id="championshipTable">
+      <img class="trophyImg" src="F1/other/teamsWCTrophyImg2.png" />
+      <table>
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>TEAM</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-odd">
+            <td>1</td>
+            <td>Red Bull Racing Honda RBPT</td>
+            <td>503</td>
+          </tr>
+          <tr class="row-even">
+            <td>2</td>
+            <td>Mercedes</td>
+            <td>247</td>
+          </tr>
+          <tr class="row-odd">
+            <td>3</td>
+            <td>Aston Martin Aramco Mercedes</td>
+            <td>196</td>
+          </tr>
+          <tr class="row-even">
+            <td>4</td>
+            <td>Ferrari</td>
+            <td>191</td>
+          </tr>
+          <tr class="row-odd">
+            <td>5</td>
+            <td>McLaren Mercedes</td>
+            <td>103</td>
+          </tr>
+          <tr class="row-even">
+            <td>6</td>
+            <td>Alpine Renault</td>
+            <td>57</td>
+          </tr>
+          <tr class="row-odd">
+            <td>7</td>
+            <td>Williams Mercedes</td>
+            <td>11</td>
+          </tr>
+          <tr class="row-even">
+            <td>8</td>
+            <td>Haas Ferrari</td>
+            <td>11</td>
+          </tr>
+          <tr class="row-odd">
+            <td>9</td>
+            <td>Alfa Romeo Ferrari</td>
+            <td>9</td>
+          </tr>
+          <tr class="row-even">
+            <td>10</td>
+            <td>AlphaTauri Honda RBPT</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="flexColumn">
+    <section id="socials" class="flexRow">
+      <a href="https://www.facebook.com/Formula1" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/f1" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/f1/" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com/F1" class="fa fa-youtube"></a>
+    </section>
+    <p>This is a student made website inspired by the authentic <a href="f1.com">Formula 1</a> website.</p>
+
+    <img src="F1/other/f1-whitelogo.png" alt="formula1 logo">
+    <a href="mailto:sebastianjr.morocho@gmail.com">2023 Sebastian Morocho (semo5282)</a>
+
+  </footer>
+</body>
+
+<script src="champScript.js"></script>
+
+</html>

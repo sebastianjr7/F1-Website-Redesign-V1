@@ -1,0 +1,1450 @@
+:root {
+  --frameHeight: 185px;
+
+  --RedBullPrim: #131a2d;
+  --RedBullSec: #e30118;
+  --RedBullTre: #fed502;
+
+  --FerrariPrim: #ef1a2d;
+  --FerrariSec: #fff200;
+  --FerrariTre: #000000;
+
+  --MercedesPrim: #00a19b;
+  --MercedesSec: #000000;
+  --MercedesTre: #c8ccce;
+
+  --AlpinePrim: #2173b8;
+  --AlpineSec: #f363b9;
+  --AlpineTre: #000000;
+
+  --McLarenPrim: #ff7f00;
+  --McLarenSec: #5fc4ea;
+  --McLarenTre: #000000;
+
+  --WilliamsPrim: #00a0de;
+  --WilliamsSec: #041e42;
+  --WilliamsTre: #ffffff;
+
+  --ARomeoPrim: #a42134;
+  --ARomeoSec: #241f21;
+  --ARomeoTre: #ffffff;
+
+  --AMartinPrim: #358c75;
+  --AMartinSec: #d6ee56;
+  --AMartinTre: #000000;
+
+  --ATauriPrim: #20394c;
+  --ATauriSec: #f1f3f4;
+  --ATauriTre: #ff0800;
+
+  --HaasPrim: #ffffff;
+  --HaasSec: #e30514;
+  --HaasTre: #111111;
+}
+
+@font-face {
+  font-family: f1FontWide;
+  src: url(data/formula1-display-wide.ttf);
+}
+
+@font-face {
+  font-family: f1FontBlack;
+  src: url(data/formula1-display-black.ttf);
+}
+
+@font-face {
+  font-family: f1FontBold;
+  src: url(data/formula1-display-bold-bold.ttf);
+}
+
+@font-face {
+  font-family: f1FontRegular;
+  font-weight:900;
+  src: url(data/formula1-display-regular.ttf);
+}
+
+@font-face {
+  font-family: f1FontItalic;
+  src: url(data/formula1-display-italic-italic.ttf);
+}
+
+@font-face {
+  font-family: TitilliumWebRegular;
+  src: url(data/TitilliumWeb-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+}
+
+#bodyBackground {
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 70%;
+}
+
+main {
+  padding: 25px 0px;
+  background-color: #121212;
+}
+
+footer{
+  align-items: center;
+  gap: 20px;
+  background: #121212;
+  font-size: 25px;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+footer img{
+  height: 75px;
+}
+
+footer p, footer a{
+  font-size: 15px;
+  font-family: "f1fontregular";
+}
+
+footer a{
+  color: #fff;
+}
+
+#socials{
+  justify-content: center;
+  gap: 75px;
+  width: 100%;
+  padding: 20px 0px;
+  background: #323232; 
+}
+
+#socials a{
+  color: #fff;
+}
+
+#socials a:hover {
+  opacity: 0.7;
+  color: #f00;
+  transition: 0.25s ease;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  font-size: 9px;
+
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+  width: 20%;
+
+  background-color: transparent;
+  background-image: linear-gradient(#000000, #000000, transparent);
+}
+
+nav .active {
+  color: #ff0000;
+  background-image: linear-gradient(#dddddd, #dddddd, transparent);
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+
+  display: block;
+  padding: 10px 5px;
+  text-align: center;
+
+  font-family: "f1FontRegular";
+
+  transition: 1s;
+}
+
+nav a:hover {
+  color: red;
+  background-image: linear-gradient(#dddddd, #dddddd, transparent);
+}
+
+nav a img {
+  height: 9px;
+}
+
+header {
+  overflow: hidden;
+  text-align: center;
+}
+
+#header-img {
+  width: 150px;
+  margin: 0px; 
+  padding: 35px 0px;
+
+  transition: 1s;
+}
+
+#header-img:hover {
+  width: 300px;
+}
+
+header h1 {
+  margin: 0px;
+  color: red;
+  padding: 45px 0px;
+  font-size: 20px;
+}
+
+.pageHeader {
+  font-family: "f1FontBlack";
+}
+
+.description {
+  background: #323232;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: "f1FontItalic";
+}
+
+.description, .buttonSection{
+  margin: 0px 0px 25px;
+}
+
+p {
+  margin: 0px;
+  padding: 20px;
+  color: white;
+  font-size: 9px;
+}
+
+h2{
+  margin: 0px;
+  font-size: 15px;
+}
+
+h3{
+  margin: 0px;
+  font-size: 10px;
+}
+
+.raceCalendar{
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0px 10px;
+  width: fit-content;
+  height: fit-content;
+  gap: 20px;
+}
+
+.homeCard {
+  display: none;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 0px;
+}
+
+#nextRacesBtns {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.prevBtn, .nextBtn {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  height: fit-content;
+  padding: 40px 10px;
+  color: #fff;
+  font-family: "f1fontregular";
+  font-weight: 900;
+  font-size: 25px;
+  transition: 0.6s ease;
+  background-color: #12121290;
+  border-radius: 0px 5px 5px 0px;
+  user-select: none;
+}
+
+.nextBtn{
+  left: auto;
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+  background: #00000090;
+}
+
+.nextRaces{
+  position: relative;
+  align-items: center;
+  gap: 50px;
+
+  padding: 15px 20px;
+  background: #000;
+  border: 2.5px solid #f00;
+}
+
+.nextRaceCard{
+  display: none;
+  flex-direction: column;
+  background: #606060;
+  padding: 5px;
+  border: 2.5px solid #fff;
+  border-radius: 5px;
+  width: unset;
+}
+
+.nextRaceCard header {
+  background: #1e1e1e;
+  color: white;
+
+  padding: 25px 5px;
+}
+
+.nextRaceCard h2{
+  font-family: "f1fontbold";
+}
+
+.nextRaceCard h3{
+  font-family: "f1fontregular";
+}
+
+.nextRaceCard header img {
+  height: 100px;
+}
+
+.nextRaceCardDate{
+  justify-content: center;
+  gap: 20px;
+  padding: 5px; 
+  height: fit-content;
+
+  background: #f00;
+  color: #fff;
+}
+
+.nextRaceCardDate hr{
+  margin: 0px;
+  border: 1px solid #fff;
+}
+
+.nextRaceCardDate h2{
+  margin: 0px;
+}
+
+.prevRace{
+  width: unset;
+  height: fit-content;
+  gap: 0;
+  border: 2.5px solid #f00;
+}
+
+.calendarHeader{
+  flex-wrap: nowrap;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.calendarHeader hr{
+  width: 100%;
+  margin: 0px;
+  border: 1px solid red;
+}
+
+.calendarHeader h3{
+  padding: 10px;
+  font-family: "f1fontregular";
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  color: #fff;
+}
+
+.results{
+  justify-content: center;
+}
+
+#prevRace{
+  display: flex;
+  flex-direction: column;
+}
+
+#currRace{
+  display: flex;
+  flex-direction: column;
+}
+
+.raceHeader, .raceSubHeader{
+  height: fit-content;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+  color: #fff;
+  background: #f00;
+  font-family: "f1fontbold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.raceHeader h1, .raceSubHeader h1{
+  margin: 0;
+}
+
+.raceSubHeader{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: #800;
+}
+
+#topTen {
+  width: 100%;
+}
+
+#raceWinner {
+  width: unset;
+  background-image: url(F1/flags/checkered-flag-poster.png);
+  font-family: "f1fontblack";
+  justify-content: flex-end;
+  padding: unset;
+  align-items: center;
+}
+
+#raceWinner img{
+  height: 350px;
+  width: 350px;
+}
+
+#raceWinner h1{
+  margin: 0px;
+  width: 100%;
+  color: #C8B100;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #121212c2;
+  text-decoration: solid;
+  text-shadow: 
+    0 0 10px #000, 
+    0 0 10px #000, 
+    0 0 10px #000;
+}
+
+#fastestLap {
+  background-color: #000;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "F1FontRegular";
+  height: 40px;
+}
+
+#fastestLap h3:nth-child(1){
+  color: #f0f;
+  font-family: "F1FontRegular";
+}
+
+.cards {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2750px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.teamSection {
+  justify-content: center;
+  gap: 5px; 
+  flex-wrap: wrap;
+  padding: 5px; 
+  background: #606060;
+  width: min-content;
+
+  border: 2.5px solid;
+}
+
+.team-title {
+  display: block;
+  width: 100%;
+  color: white;
+}
+
+.team-title h1 {
+  font-family: "f1FontWide";
+  font-size: 7px;
+  margin: 0px;
+  padding: 20px 5px;
+}
+
+.driverSection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.driver-card {
+  display: inline-flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.right {
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+}
+
+.front-cover {
+  width: fit-content;
+  height: fit-content;
+
+  border: 2px solid;
+}
+
+.driverFrame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(var(--frameHeight)*1.776);
+}
+
+.num {
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 60px;
+}
+
+.team-img {
+  height: var(--frameHeight);
+}
+
+.driver-img {
+  height: var(--frameHeight);
+  position: absolute;
+}
+
+.title {
+  padding: 10px 20px 5px;
+  width: unset;
+  gap: 20px;
+}
+
+.fullname {
+  display: flex;
+  gap: 5px;
+  font-family: "f1FontRegular";
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+}
+
+.fname {
+  font-weight: 200;
+}
+
+.lname {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.flag {
+  height: 15px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.back-cover {
+  display: flex;
+  height: max-content;
+  gap: 20px;
+  padding: 15px 5px;
+}
+
+.back-cover tr:nth-child(even) {background-color: unset;}
+.back-cover td{text-align: left;}
+
+.teams-back-cover {
+  width: unset;
+}
+
+.drivers-back-cover {
+  width: unset;
+}
+
+.buttonSection {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 0px;
+  background: #323232;
+}
+
+.buttonSection hr{
+  margin: 15px 0px;
+  border: 1px solid #fff;
+}
+
+#championshipTable {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px;
+  max-width: 2000px;
+}
+
+.trophyImg {
+  height: 150px;
+  padding: 25px 0px;
+}
+
+.button {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-bottom: 2.5px solid transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 9px;
+  padding: 15px 0px;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+
+.button:hover {
+  background-color: unset;
+  border-bottom: 2.5px solid #ff0000;
+}
+
+.activeBtn{
+  background-color: unset;
+  border-bottom: 2.5px solid #ff0000;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #f5f5f5;
+  background-color: #121212;
+  font-size: 10px;
+
+  font-family: "F1FontRegular";
+}
+
+caption {
+  background: #800800;
+}
+
+thead {
+  height: unset;
+  background-color: #181818;
+  font-family: "F1FontBold";
+  font-size: 9px;
+}
+
+tr {
+  text-align: center;
+  transition: 0.5s;
+}
+
+tr:nth-child(even){background-color: #181818;}
+
+th,td {
+  padding: 10px 5px;
+}
+
+tr:nth-child(even) td:first-child { border-radius: 5px 0px 0px 5px; }
+tr:nth-child(even) td:last-child { border-radius: 0px 5px 5px 0px;}
+
+tr:nth-child(odd) td:first-child { border-radius: 5px 0px 0px 5px;}
+tr:nth-child(odd) td:last-child { border-radius: 0px 5px 5px 0px;}
+
+td img{
+  width: 25px;
+  aspect-ratio: 3/2;
+}
+
+#weekendSchedule{
+  display: flex;
+  flex-direction: column;
+  background-color: #15151E;
+  justify-content: center;
+  width: 100%;
+}
+
+#scheduleTable{
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family:"TitilliumWebRegular";
+}
+
+#scheduleTable tr{
+  background-color: unset;
+}
+
+#scheduleTable tr:nth-child(3){ border-bottom:1px solid #fff; }
+
+#scheduleTableBody td:nth-child(1) { font-family:"f1fontregular";}
+#scheduleTableBody td:nth-child(2) { color:#929292;}
+
+.gpCountdownHeader{
+    padding: 30px 0px;
+    background: #006341;
+}
+
+.gpCountdownHeader h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "f1fontregular";
+  font-size: 20px;
+  text-decoration: underline #929292;
+  padding: 0;
+  margin: 10px;
+  width: max-content;
+}
+
+#gpCountdown{
+  border-collapse: separate;
+  background: #006341;
+  width: auto;
+  text-transform: uppercase;
+}
+
+#gpCountdown thead{
+  font-size: 20px;
+  background: #006341;
+  font-family: "f1fontbold";
+}
+
+#gpCountdown tbody{
+  font-size: 10px;
+  font-family: "f1fontregular";
+}
+
+#gpCountdown th, #gpCountdown td{
+  margin: 0;
+  padding: 0px 30px;
+  width: min-content;
+
+}
+
+#gpCountdown th:not(th:last-child), #gpCountdown td:not(td:last-child){
+  border-right: 1px solid #929292;
+}
+
+#gpCountdown tr{
+  width: fit-content;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.teamFrame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  border-radius: 5px;
+}
+
+.team-icon {
+  width: 75px;
+  padding: 10px;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.jcCenter-aiCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.team-drivers {
+  justify-content: space-evenly;
+  gap: 0px;
+  padding: 0px;
+
+  height: fit-content;
+  width: -webkit-fill-available;
+}
+
+.team-drivers img {
+  width: 50px;
+  height: 50px;
+
+  transition: 0.2s;
+}
+
+.team-driver-names h2 {
+  padding: 0;
+
+  font-family: "f1FontRegular";
+
+  transition: 0.2s;
+}
+
+.car-img {
+  height: 100px;
+}
+
+.teamInfo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 30px;
+
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.raceSchedule {
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 2000px;
+}
+
+.raceCard {
+  display: flex;
+  padding: 5px;
+  width: fit-content;
+  height: auto;
+  gap: 2.5px;
+
+  border-radius: 30px;
+  border: 2.5px solid #FFF;
+  background: #606060;
+}
+
+.raceDetails{
+  height: auto;
+  padding: 0px;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 25px 0px 0px 25px;
+  background: #FF0000;
+
+  color: #FFF;
+  text-align: center;
+  font-family: "TitilliumWebRegular";
+}
+
+.raceRoundNumber{
+  padding: 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.raceDetails hr{
+  width: 50px;
+  margin: 0px 10px;
+}
+
+.raceDate{
+  padding: 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 70px;
+}
+
+.raceCover{
+  width: min-content;
+  height: auto;
+  flex-shrink: 0;
+  gap: 10px;
+
+  border-radius: 0px 25px 25px 0px;
+  background: #fff url(F1/other/place-holder-image.png) no-repeat center/cover;
+}
+
+.location {
+  height: 55px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+
+
+  border-radius: 0px 25px 0px 0px;
+  background: rgba(0, 0, 0, 0.7);
+
+  font-family: "f1FontRegular";
+  color: #FFF;
+}
+
+.location img {
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.raceCountryName{
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.raceTitle{
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.podium {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+}
+
+#circuit {
+  width: 300px;
+}
+
+#calledOff{
+  width: 300px;
+  height: 100px;
+}
+
+.firstPlace, .secondPlace, .thirdPlace {
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  
+  font-family: "f1FontRegular";
+}
+
+.p1DriverImage, .p2DriverImage, .p3DriverImage {
+  height: 100px;
+}
+
+.firstPlace{
+  padding-top: 10px;
+}
+
+.secondPlace {
+  padding-top: 30px;
+}
+
+.thirdPlace {
+  padding-top: 40px;
+}
+
+.podiumDriver {
+  background: #fff;
+
+  padding: 10px;
+  height: 100%;
+  align-items: center;
+  align-self: stretch;
+  justify-content: flex-end;
+}
+
+.p1DriverCountryImage, .p2DriverCountryImage, .p3DriverCountryImage {
+  height: 15px;
+
+  border: #121212 solid 1px;
+  border-radius: 2.5px;
+}
+
+.rightPodium {
+  border-radius: 0px 0px 25px 0px;
+}
+
+.redBull-Border {border-color: var(--RedBullSec);}
+.redBull-BackgroundPrim{background: var(--RedBullPrim);}
+.redBull-BackgroundSec {background: var(--RedBullSec);}
+.redBull-Text {color: var(--RedBullTre);}
+.redbull:hover{
+  background: var(--RedBullPrim);
+  color: var(--RedBullSec);
+}
+
+.ferrari-Border {border-color: var(--FerrariSec);}
+.ferrari-BackgroundPrim {background: var(--FerrariPrim);}
+.ferrari-BackgroundSec {background: var(--FerrariSec);}
+.ferrari-Text {color: var(--FerrariTre);}
+.ferrari:hover{
+  background: var(--FerrariPrim);
+  color: var(--FerrariSec);
+}
+
+.mercedes-Border {border-color: var(--MercedesSec);}
+.mercedes-BackgroundPrim {background: var(--MercedesPrim);}
+.mercedes-BackgroundSec {background: var(--MercedesSec);}
+.mercedes-Text {color: var(--MercedesTre);}
+.mercedes:hover{
+  background: var(--MercedesPrim);
+  color: var(--MercedesSec);
+}
+
+.alpine-Border {border-color: var(--AlpineSec);}
+.alpine-BackgroundPrim {background: var(--AlpinePrim);}
+.alpine-BackgroundSec {background: var(--AlpineSec);}
+.alpine-Text {color: var(--AlpineTre);}
+.alpine:hover{
+  background: var(--AlpinePrim);
+  color: var(--AlpineSec);
+}
+
+.mcLaren-Border {border-color: var(--McLarenSec);}
+.mcLaren-BackgroundPrim {background: var(--McLarenPrim);}
+.mcLaren-BackgroundSec {background: var(--McLarenSec);}
+.mcLaren-Text {color: var(--McLarenTre);}
+.mclaren:hover{
+  background: var(--McLarenPrim);
+  color: var(--McLarenSec);
+}
+.aRomeo-Border {border-color: var(--ARomeoSec);}
+.aRomeo-BackgroundPrim {background: var(--ARomeoPrim);}
+.aRomeo-BackgroundSec {background: var(--ARomeoSec);}
+.aRomeo-Text {color: var(--ARomeoTre);}
+.alfaromeo:hover{
+  background: var(--ARomeoPrim);
+  color: var(--ARomeoSec);
+}
+
+.aMartin-Border {border-color: var(--AMartinSec);}
+.aMartin-BackgroundPrim {background: var(--AMartinPrim);}
+.aMartin-BackgroundSec {background: var(--AMartinSec);}
+.aMartin-Text {color: var(--AMartinTre);}
+.astonmartin:hover{
+  background: var(--AMartinPrim);
+  color: var(--AMartinSec);
+}
+
+.haas-Border {border-color: var(--HaasSec);}
+.haas-BackgroundPrim {background: var(--HaasPrim);}
+.haas-BackgroundSec {background: var(--HaasSec);}
+.haas-Text {color: var(--HaasTre);}
+.haas:hover{
+  background: var(--HaasPrim);
+  color: var(--HaasSec);
+}
+
+.aTauri-Border {border-color: var(--ATauriSec);}
+.aTauri-BackgroundPrim {background: var(--ATauriPrim);}
+.aTauri-BackgroundSec {background: var(--ATauriSec);}
+.aTauri-Text {color: var(--ATauriTre);}
+.alphatauri:hover{
+  background: var(--ATauriPrim);
+  color: var(--ATauriSec);
+}
+
+.williams-Border {border-color: var(--WilliamsSec);}
+.williams-BackgroundPrim {background: var(--WilliamsPrim);}
+.williams-BackgroundSec {background: var(--WilliamsSec);}
+.williams-Text {color: var(--WilliamsTre);}
+.williams:hover{
+  background: var(--WilliamsPrim);
+  color: var(--WilliamsSec);
+}
+
+.driverLabelTable,
+.driverInfo2 {
+  border-collapse: collapse;
+  width: fit-content;
+  font-size: 10px;
+  line-height: 0.7;
+  background-color: unset;
+}
+
+.driverLabelTable {
+  font-family: "f1FontBold";
+}
+
+.driverInfo2 {
+  font-family: "TitilliumWebRegular";
+}
+
+.labels td,
+.information td {
+  height: 5px;
+  vertical-align: bottom;
+  padding: 5px 0px;
+}
+
+@media only screen and (min-width: 1280px) {
+
+  footer{
+    font-size: 30px;
+  }
+  
+  footer img{
+    height: 100px;
+  }
+
+  #socials{
+    gap: 100px;
+  }
+  
+  nav {
+    font-size: 25px; 
+  }
+  
+  nav a img {
+    height: 20px; 
+  }
+  
+  #header-img {
+    width: 475px;
+    margin: 100px 0px;
+  }
+  
+  #header-img:hover {
+    width: 750px; 
+  }
+  
+  header h1 {
+    font-size: 75px; 
+  }
+  
+  p {
+    margin: 20px;
+    font-size: 20px; 
+  }
+  
+  h2{
+    font-size: 25px; 
+  }
+  
+  h3{
+    font-size: 15px; 
+  }
+  
+  .prevBtn, .nextBtn {
+    padding: 100px 25px; 
+  }
+  
+  .nextRaces{
+    padding: 20px 100px; 
+  }
+  
+  .nextRaceCard{
+    width: 500px; 
+  }
+  
+  .nextRaceCard header {
+    padding: 50px 10px; 
+  }
+  
+  .nextRaceCard h2{
+    font-size: 35px;
+  }
+  
+  .nextRaceCard h3{
+    font-size: 20px;
+  }
+  
+  .nextRaceCard header img {
+    height: 150px; 
+  }
+  
+  .nextRaceCardDate{
+    padding: 10px; 
+  }
+  
+  .nextRaceCard aside {
+    padding: 75px 25px;
+  }
+  
+  .prevRace{
+    width: 1500px; 
+    border-width: 5px;
+  }
+  
+  #prevRace{
+    flex-direction: row; 
+  }
+  
+  .raceHeader, .raceSubHeader{
+    font-size: 40px; 
+  }
+  
+  #raceWinner {
+    width: 450px; 
+  }
+  
+  #raceWinner img{
+    height: 545px; 
+    width: 545px; 
+  }
+  
+  #raceWinner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px; 
+    height: 65px;
+  }
+  
+  #fastestLap {
+    height: 65px; 
+  }
+
+  #fastestLap h3{
+    font-size: 20px;
+  }
+
+  .calendarHeader h3{
+    font-size: 20px;
+  }
+  
+  .front-cover {
+    border-width: 5px;
+    align-items: center;
+  }
+
+  .teamSection {
+    width: min-content;
+    border-width: 5px;
+  }
+  
+  .team-title h1 {
+    font-size: 25px;
+  }
+  
+  .driver-card, .right {
+    flex-direction: row;
+  }
+  
+  .driverFrame {
+    width: calc(var(--frameHeight)*1.776);
+  }
+
+  .driverSection {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  
+  .num {
+    width: 80px; 
+  }
+  
+  .title {
+    width: 350px; 
+  }
+  
+  .fullname {
+    font-size: 10px; 
+  }
+  
+  .flag {
+    height: 36px; 
+  }
+  
+  .back-cover {
+    gap: 30px; 
+    padding: 15px 30px; 
+  }
+  
+  .teams-back-cover {
+    width: 550px; 
+  }
+  
+  .drivers-back-cover {
+    width: 420px; 
+  }
+  
+  .buttonSection {
+    gap: 50px; 
+    padding: 5px 100px; 
+  }
+  
+  #championshipTable {
+    padding: 0px 10px; 
+  }
+  
+  .trophyImg {
+    height: 350px; 
+    padding: 25px 0px; 
+  }
+  
+  .button {
+    border-bottom: 5px solid transparent; 
+    font-size: 25px; 
+    margin: 4px 2px;
+  }
+  
+  .button:hover {
+    border-bottom: 5px solid #ff0000;
+  }
+  
+  .activeBtn{
+    border-bottom: 5px solid #ff0000;
+  }
+  
+  table {
+    font-size: 15px; 
+  }
+  
+  thead {
+    height: 70px; 
+    font-size: 25px; 
+  }
+  
+  th,td {
+    padding: 15px 50px; 
+  }
+
+  #scheduleTable{
+    font-size: 25px;
+  }
+  
+  #gpCountdown thead{
+    font-size: 50px; 
+  }
+  
+  #gpCountdown tbody{
+    font-size: 15px; 
+  }
+
+  .gpCountdownHeader h1{
+    font-size: 30px;
+  }
+  
+  .team-card {
+    flex-direction: row; 
+    padding: 10px; 
+  }
+  
+  .team-icon {
+    width: 125px; 
+  }
+  
+  .team-drivers img {
+    width: 125px; 
+    height: 125px; 
+  }
+  
+  .car-img {
+    height: 200px; 
+  }
+  
+  .raceDetails{
+    height: 400px; 
+  }
+  
+  .raceRoundNumber{
+    padding: 10px; 
+  }
+  
+  .raceDetails hr{
+    width: 70px; 
+    margin: 0px; 
+  }
+  
+  .raceDate{
+    padding: 10px;
+  }
+  
+  .raceCover{
+    width: 425px; 
+    height: 400px; 
+    gap: 45px;
+  }
+  
+  .location {
+    height: fit-content; 
+  }
+  
+  #calledOff{
+    height: 150px;
+    min-width: 400px;
+  }
+  
+  .p1DriverImage, .p2DriverImage, .p3DriverImage {
+    height: 115px;
+  }
+
+  .p1DriverCountryImage, .p2DriverCountryImage, .p3DriverCountryImage{
+    height: 20px;
+  }
+  
+  .firstPlace{
+    padding-top: 20px;
+  }
+  
+  .secondPlace {
+    padding-top: 40px;
+  }
+  
+  .thirdPlace {
+    padding-top: 50px;
+  }
+  
+  .driverLabelTable,
+  .driverInfo2 {
+    font-size: 15px;
+  }
+  
+}

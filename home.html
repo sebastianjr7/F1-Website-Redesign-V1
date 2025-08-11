@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Sebastian Morocho">
+  <meta name="description" content="Home">
+  <meta name="generator" content="vscode">
+  <meta name="keywords" content="F1, Home">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="F1/other/F1TV2.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="toggleCalendarTab('upNextBtn'), toggleRemainingRace(0)">
+  <nav>
+    <ul>
+      <li>
+        <a class="active" href="home.html"><img src="F1/other/f1-logo.png" alt="F1 logo" /></a>
+      </li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="driver-card.html">Drivers</a></li>
+      <li><a href="championship.html">Championship</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <video id="bodyBackground" playsinline autoplay muted loop poster="F1/flags/checkered-flag-poster.png">
+      <source src="F1/flags/checkered-flag.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <a href="home.html">
+      <img id="header-img" src="F1/other/f1-logo.png" alt="F1 logo" />
+    </a>
+  </header>
+
+  <main>
+    <section class="buttonSection">
+      <button class="button" id="lastRaceBtn" onclick="toggleCalendarTab('lastRaceBtn')">
+        Last Race
+      </button>
+      <hr>
+      <button class="button activeBtn" id="upNextBtn" onclick="toggleCalendarTab('upNextBtn')">
+        Up Next
+      </button>
+      <hr>
+      <button class="button" id="remRacesBtn" onclick="toggleCalendarTab('remRacesBtn')">
+        Remaining Races
+      </button>
+    </section>
+
+    <section class="raceCalendar flexRow">
+      <section class="homeCard" id="lastRaceCard">
+        <header class="calendarHeader flexRow">
+          <hr>
+          <h3 class="roundNumber">
+            Round #
+          </h3>
+          <hr>
+        </header>
+        <section class="prevRace flexColumn">
+          <section class="raceHeader">
+            <h1>Race Title</h1>
+          </section>
+
+          <section class="raceSubHeader jcCenter-aiCenter">
+            <img class="flag" src="F1/other/place-holder-image.png" alt="race Country flag">
+            <h1>Sub Header</h1>
+          </section>
+
+          <section id="prevRace" class="results">
+            <aside id="raceWinner" class="flexColumn">
+            </aside>
+
+            <article id="topTen" class="flexColumn">
+              <table class="topTenTable">
+                <thead>
+                  <tr>
+                    <th>POS</th>
+                    <th>NAME</th>
+                    <th>TEAM</th>
+                    <th>TIME</th>
+                  </tr>
+                </thead>
+                <tbody id="topTenBody">
+
+                </tbody>
+              </table>
+
+              <section id="fastestLap" class="flexRow">
+              </section>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section class="homeCard" id="upNextCard">
+        <header class="calendarHeader flexRow">
+          <hr>
+          <h3 class="roundNumber">
+            Round #
+          </h3>
+          <hr>
+        </header>
+        <section class="prevRace flexColumn">
+          <section class="raceHeader">
+            <h1>Race Title</h1>
+          </section>
+
+          <section class="raceSubHeader flexRow jcCenter-aiCenter">
+            <img class="flag" src="F1/other/place-holder-image.png" alt="race country flag">
+            <h1>Sub Header</h1>
+          </section>
+
+          <section id="currRace" class="results">
+            <aside class="gpCountdownHeader flexColumn jcCenter-aiCenter">
+              <h1>Grand Prix Weekend</h1>
+              <table id="gpCountdown">
+                <thead class="gpCountdownHead">
+                  <tr>
+                    <th>dd</th>
+                    <th>hh</th>
+                    <th>mm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Days</td>
+                    <td>Hrs</td>
+                    <td>Mins</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </aside>
+
+            <article id="weekendSchedule">
+              <section class="buttonSection">
+                <button onclick="toggleTime('track')" class="button activeBtn" id="trackTimeBtn">
+                  Track Time
+                </button>
+                <hr>
+                <button onclick="toggleTime('local')" class="button" id="localTimeBtn">
+                  My Time
+                </button>
+              </section>
+              <table id="scheduleTable">
+                <tbody id="scheduleTableBody">
+                  <tr>
+                    <td>Practice 1</td>
+                    <td>XYZ</td>
+                    <td>19:30 - 20:30</td>
+                  </tr>
+                  <tr>
+                    <td>QUALIFYING</td>
+                    <td>XYZ</td>
+                    <td>23:00 - 00:00</td>
+                  </tr>
+                  <tr>
+                    <td>SPRINT SHOOTOUT</td>
+                    <td>XYZ</td>
+                    <td>19:30 - 20:30</td>
+                  </tr>
+                  <tr>
+                    <td>Sprint</td>
+                    <td>XYZ</td>
+                    <td>00:00 - 01:00</td>
+                  </tr>
+                  <tr>
+                    <td>Race</td>
+                    <td>XYZ</td>
+                    <td>21:00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section class="homeCard" id="remRaceCard">
+        <header class="calendarHeader flexRow">
+          <hr>
+          <h3 class="roundNumber">
+            Remaining Races
+          </h3>
+          <hr>
+        </header>
+        <section class="nextRaces flexRow">
+
+          <section class="nextRaceCard">
+            <header class="nextRaceHeader">
+              <img class="flag" src="F1/other/place-holder-image.png" alt="race country flag">
+              <h2>Country Name</h2>
+              <h3>Race Title</h3>
+            </header>
+            <section class="nextRaceCardDate flexRow">
+              <h3>Round ##</h3>
+              <hr>
+              <h3>DD - DD MMM</h3>
+            </section>
+            <aside class="gpCountdownHeader flexColumn jcCenter-aiCenter">
+              <h1>Grand Prix Weekend</h1>
+              <table id="gpCountdown">
+                <thead class="gpCountdownHead">
+                  <tr>
+                    <th>dd</th>
+                    <th>hh</th>
+                    <th>mm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Days</td>
+                    <td>Hrs</td>
+                    <td>Mins</td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
+
+          </section>
+
+          <section class="nextRaceCard">
+            <header class="nextRaceHeader">
+              <img class="flag" src="F1/other/place-holder-image.png" alt="race country flag">
+              <h2>Country Name</h2>
+              <h3>Race Title</h3>
+            </header>
+            <section class="nextRaceCardDate flexRow">
+              <h3>Round ##</h3>
+              <hr>
+              <h3>DD - DD MMM</h3>
+            </section>
+            <aside class="gpCountdownHeader flexColumn jcCenter-aiCenter">
+              <h1>Grand Prix Weekend</h1>
+              <table id="gpCountdown">
+                <thead class="gpCountdownHead">
+                  <tr>
+                    <th>dd</th>
+                    <th>hh</th>
+                    <th>mm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Days</td>
+                    <td>Hrs</td>
+                    <td>Mins</td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
+
+          </section>
+
+          <section class="nextRaceCard">
+            <header class="nextRaceHeader">
+              <img class="flag" src="F1/other/place-holder-image.png" alt="race country flag">
+              <h2>Country Name</h2>
+              <h3>Race Title</h3>
+            </header>
+            <section class="nextRaceCardDate flexRow">
+              <h3>Round ##</h3>
+              <hr>
+              <h3>DD - DD MMM</h3>
+            </section>
+            <aside class="gpCountdownHeader flexColumn jcCenter-aiCenter">
+              <h1>Grand Prix Weekend</h1>
+              <table id="gpCountdown">
+                <thead class="gpCountdownHead">
+                  <tr>
+                    <th>dd</th>
+                    <th>hh</th>
+                    <th>mm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Days</td>
+                    <td>Hrs</td>
+                    <td>Mins</td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
+
+          </section>
+          <section id="nextRacesBtns">
+            <a class="prevBtn" onclick="toggleRemainingRace(-1) ">&lt;</a>
+            <a class="nextBtn" onclick="toggleRemainingRace(1) ">&gt;</a>
+          </section>
+        </section>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer class="flexColumn">
+    <section id="socials" class="flexRow">
+      <a href="https://www.facebook.com/Formula1" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/f1" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/f1/" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com/F1" class="fa fa-youtube"></a>
+    </section>
+    <p>This is a student made website inspired by the authentic <a href="f1.com">Formula 1</a> website.</p>
+
+    <img src="F1/other/f1-whitelogo.png" alt="formula1 logo">
+    <a href="mailto:sebastianjr.morocho@gmail.com">2023 Sebastian Morocho (semo5282)</a>
+
+  </footer>
+
+</body>
+
+<script src="homeScript.js"></script>
+
+</html>

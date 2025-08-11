@@ -1,0 +1,62 @@
+<img class="trophyImg" src="F1/other/teamsWCTrophyImg2.png">
+<table>
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>TEAM</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="redbull">
+            <td>1</td>
+            <td>Red Bull Racing Honda RBPT</td>
+            <td>503</td>
+          </tr>
+          <tr class="mercedes">
+            <td>2</td>
+            <td>Mercedes</td>
+            <td>247</td>
+          </tr>
+          <tr class="astonmartin">
+            <td>3</td>
+            <td>Aston Martin Aramco Mercedes</td>
+            <td>196</td>
+          </tr>
+          <tr class="ferrari">
+            <td>4</td>
+            <td>Ferrari</td>
+            <td>191</td>
+          </tr>
+          <tr class="mclaren">
+            <td>5</td>
+            <td>McLaren Mercedes</td>
+            <td>103</td>
+          </tr>
+          <tr class="alpine">
+            <td>6</td>
+            <td>Alpine Renault</td>
+            <td>57</td>
+          </tr>
+          <tr class="williams">
+            <td>7</td>
+            <td>Williams Mecedes</td>
+            <td>11</td>
+          </tr>
+          <tr class="haas">
+            <td>8</td>
+            <td>Haas Ferrari</td>
+            <td>11</td>
+          </tr>
+          <tr class="alfaromeo">
+            <td>9</td>
+            <td>Alfa Romeo Ferrari</td>
+            <td>9</td>
+          </tr>
+          <tr class="alphatauri">
+            <td>10</td>
+            <td>AlphaTauri Honda RBPT</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+        </table>
