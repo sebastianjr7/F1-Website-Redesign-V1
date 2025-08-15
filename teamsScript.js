@@ -111,7 +111,7 @@ function displayTeamStats(team, i) {
   const labels = document.getElementsByClassName("labels");
   labels[i].innerHTML = team.getTeamLabels();
 
-  const info = document.getElementsByClassName("information");
+  const info = document.getElementsByClassName("stats");
   info[i].innerHTML = team.getTeamInfo();
 }
 

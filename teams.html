@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teams</title>
-  <link rel="icon" type="image/x-icon" href="F1/other/F1TV2.ico" />
+  <link rel="icon" type="image/x-icon" href="media/other/F1TV2.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,18 +19,18 @@
   <nav>
     <ul>
       <li>
-        <a href="home.html"><img src="F1/other/f1-logo.png" alt="F1 logo" /></a>
+        <a href="home.html"><img src="media/other/f1-logo.png" alt="F1 logo" /></a>
       </li>
       <li><a class="active" href="teams.html">Teams</a></li>
-      <li><a href="driver-card.html">Drivers</a></li>
+      <li><a href="drivers.html">Drivers</a></li>
       <li><a href="championship.html">Championship</a></li>
       <li><a href="schedule.html">Schedule</a></li>
     </ul>
   </nav>
 
   <header>
-    <video id="bodyBackground" playsinline autoplay muted loop poster="F1/flags/checkered-flag-poster.png">
-      <source src="F1/flags/checkered-flag.mp4" type="video/mp4" />
+    <video id="bodyBackground" playsinline autoplay muted loop poster="media/flags/checkered-flag-poster.png">
+      <source src="media/flags/checkered-flag.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <a href="teams.html">
@@ -55,12 +55,12 @@
         <article class="team-card redBull-BackgroundPrim">
           <div class="front-cover redBull-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/redbull/team/RBicon.png" alt="redbull logo" />
-              <img class="car-img" src="F1/teams/redbull/team/rb-car.png" alt="redbull car" />
+              <img class="team-icon" src="media/teams/redbull/team/RBicon.png" alt="redbull logo" />
+              <img class="car-img" src="media/teams/redbull/team/rb-car.png" alt="redbull car" />
             </div>
             <footer class="team-drivers flexRow redBull-Border redBull-BackgroundSec">
               <img onmouseover="mOverDriver('redbullDriver2')" onmouseout="mOutDriver('redbullDriver2')"
-                class="redbullDriver1" src="F1/teams/redbull/drivers/VERicon.png" alt="redbull driver 1" />
+                class="redbullDriver1" src="media/teams/redbull/drivers/VERicon.png" alt="redbull driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('redbullDriver2')" onmouseout="mOutDriver('redbullDriver2')"
                   class="redbullDriver1 redBull-Text">
@@ -72,7 +72,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('redbullDriver1')" onmouseout="mOutDriver('redbullDriver1')"
-                class="redbullDriver2" src="F1/teams/redbull/drivers/PERicon.png" alt="redbull driver 2" />
+                class="redbullDriver2" src="media/teams/redbull/drivers/PERicon.png" alt="redbull driver 2" />
             </footer>
           </div>
 
@@ -80,8 +80,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -93,12 +93,12 @@
         <article class="team-card ferrari-BackgroundPrim">
           <div class="front-cover ferrari-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/ferrari/team/FEicon.png" alt="ferrari logo" />
-              <img class="car-img" src="F1/teams/ferrari/team/ferr-car.png" alt="ferrari car" />
+              <img class="team-icon" src="media/teams/ferrari/team/FEicon.png" alt="ferrari logo" />
+              <img class="car-img" src="media/teams/ferrari/team/ferr-car.png" alt="ferrari car" />
             </div>
             <footer class="team-drivers flexRow ferrari-BackgroundSec">
               <img onmouseover="mOverDriver('ferrariDriver2')" onmouseout="mOutDriver('ferrariDriver2')"
-                class="ferrariDriver1" src="F1/teams/ferrari/drivers/LECicon.png" alt="ferrari driver 1" />
+                class="ferrariDriver1" src="media/teams/ferrari/drivers/LECicon.png" alt="ferrari driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('ferrariDriver2')" onmouseout="mOutDriver('ferrariDriver2')"
                   class="ferrariDriver1 ferrariText">
@@ -110,7 +110,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('ferrariDriver1')" onmouseout="mOutDriver('ferrariDriver1')"
-                class="ferrariDriver2" src="F1/teams/ferrari/drivers/SAIicon.png" alt="ferrari driver 2" />
+                class="ferrariDriver2" src="media/teams/ferrari/drivers/SAIicon.png" alt="ferrari driver 2" />
             </footer>
           </div>
 
@@ -118,8 +118,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -132,12 +132,12 @@
         <article class="team-card mercedes-BackgroundPrim">
           <div class="front-cover mercedes-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/mercedes/team/MEicon.png" alt="mercedes logo" />
-              <img class="car-img" src="F1/teams/mercedes/team/mrc-car.png" alt="mercedes car" />
+              <img class="team-icon" src="media/teams/mercedes/team/MEicon.png" alt="mercedes logo" />
+              <img class="car-img" src="media/teams/mercedes/team/mrc-car.png" alt="mercedes car" />
             </div>
             <footer class="team-drivers flexRow mercedes-BackgroundSec">
               <img onmouseover="mOverDriver('mercedesDriver2')" onmouseout="mOutDriver('mercedesDriver2')"
-                class="mercedesDriver1" src="F1/teams/mercedes/drivers/HAMicon.png" alt="mercedes driver 1" />
+                class="mercedesDriver1" src="media/teams/mercedes/drivers/HAMicon.png" alt="mercedes driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('mercedesDriver2')" onmouseout="mOutDriver('mercedesDriver2')"
                   class="mercedesDriver1 mercedes-Text">
@@ -149,7 +149,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('mercedesDriver1')" onmouseout="mOutDriver('mercedesDriver1')"
-                class="mercedesDriver2" src="F1/teams/mercedes/drivers/RUSicon.png" alt="mercedes driver 2" />
+                class="mercedesDriver2" src="media/teams/mercedes/drivers/RUSicon.png" alt="mercedes driver 2" />
             </footer>
           </div>
 
@@ -157,8 +157,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -170,12 +170,12 @@
         <article class="team-card alpine-BackgroundPrim">
           <div class="front-cover alpine-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/alpine/team/ALicon.png" alt="alpine logo" />
-              <img class="car-img" src="F1/teams/alpine/team/alp-car.png" alt="alpine car" />
+              <img class="team-icon" src="media/teams/alpine/team/ALicon.png" alt="alpine logo" />
+              <img class="car-img" src="media/teams/alpine/team/alp-car.png" alt="alpine car" />
             </div>
             <footer class="team-drivers flexRow alpine-BackgroundSec">
               <img onmouseover="mOverDriver('alpineDriver2')" onmouseout="mOutDriver('alpineDriver2')"
-                class="alpineDriver1" src="F1/teams/alpine/drivers/GASicon.png" alt="alpine driver 1" />
+                class="alpineDriver1" src="media/teams/alpine/drivers/GASicon.png" alt="alpine driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('alpineDriver2')" onmouseout="mOutDriver('alpineDriver2')"
                   class="alpineDriver1 alpine-Text">
@@ -187,7 +187,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('alpineDriver1')" onmouseout="mOutDriver('alpineDriver1')"
-                class="alpineDriver2" src="F1/teams/alpine/drivers/OCOicon.png" alt="alpine driver 2" />
+                class="alpineDriver2" src="media/teams/alpine/drivers/OCOicon.png" alt="alpine driver 2" />
             </footer>
           </div>
 
@@ -195,8 +195,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -208,12 +208,12 @@
         <article class="team-card mcLaren-BackgroundPrim">
           <div class="front-cover mcLaren-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/mcLaren/team/MCicon.png" alt="mcLaren" />
-              <img class="car-img" src="F1/teams/mcLaren/team/mclaren-car.png" alt="mcLaren car" />
+              <img class="team-icon" src="media/teams/mcLaren/team/MCicon.png" alt="mcLaren" />
+              <img class="car-img" src="media/teams/mcLaren/team/mclaren-car.png" alt="mcLaren car" />
             </div>
             <footer class="team-drivers flexRow mcLaren-BackgroundSec">
               <img onmouseover="mOverDriver('mcLarenDriver2')" onmouseout="mOutDriver('mcLarenDriver2')"
-                class="mcLarenDriver1" src="F1/teams/mcLaren/drivers/NORicon.png" alt="mcLaren driver 1" />
+                class="mcLarenDriver1" src="media/teams/mcLaren/drivers/NORicon.png" alt="mcLaren driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('mcLarenDriver2')" onmouseout="mOutDriver('mcLarenDriver2')"
                   class="mcLarenDriver1 mcLaren-Text">
@@ -225,7 +225,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('mcLarenDriver1')" onmouseout="mOutDriver('mcLarenDriver1')"
-                class="mcLarenDriver2" src="F1/teams/mcLaren/drivers/PIAicon.png" alt="mcLaren driver 2" />
+                class="mcLarenDriver2" src="media/teams/mcLaren/drivers/PIAicon.png" alt="mcLaren driver 2" />
             </footer>
           </div>
 
@@ -233,8 +233,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -246,12 +246,12 @@
         <article class="team-card aRomeo-BackgroundPrim">
           <div class="front-cover aRomeo-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/alfa-romeo/team/ARicon.png" alt="alfa romeo logo" />
-              <img class="car-img" src="F1/teams/alfa-romeo/team/aRomeo-car.png" alt="alfa romeo car" />
+              <img class="team-icon" src="media/teams/alfa-romeo/team/ARicon.png" alt="alfa romeo logo" />
+              <img class="car-img" src="media/teams/alfa-romeo/team/aRomeo-car.png" alt="alfa romeo car" />
             </div>
             <footer class="team-drivers flexRow aRomeo-BackgroundSec">
               <img onmouseover="mOverDriver('aRomeoDriver2')" onmouseout="mOutDriver('aRomeoDriver2')"
-                class="aRomeoDriver1" src="F1/teams/alfa-romeo/drivers/BOTicon.png" alt="alfa romeo driver 1" />
+                class="aRomeoDriver1" src="media/teams/alfa-romeo/drivers/BOTicon.png" alt="alfa romeo driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('aRomeoDriver2')" onmouseout="mOutDriver('aRomeoDriver2')"
                   class="aRomeoDriver1 aRomeo-Text">
@@ -263,7 +263,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('aRomeoDriver1')" onmouseout="mOutDriver('aRomeoDriver1')"
-                class="aRomeoDriver2" src="F1/teams/alfa-romeo/drivers/ZHOicon.png" alt="alfa romeo driver 2" />
+                class="aRomeoDriver2" src="media/teams/alfa-romeo/drivers/ZHOicon.png" alt="alfa romeo driver 2" />
             </footer>
           </div>
 
@@ -271,8 +271,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -284,12 +284,12 @@
         <article class="team-card aMartin-BackgroundPrim">
           <div class="front-cover aMartin-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/aston-martin/team/AMicon.png" alt="aston-martin logo" />
-              <img class="car-img" src="F1/teams/aston-martin/team/aMartin-car.png" alt="aston-martin¨car" />
+              <img class="team-icon" src="media/teams/aston-martin/team/AMicon.png" alt="aston-martin logo" />
+              <img class="car-img" src="media/teams/aston-martin/team/aMartin-car.png" alt="aston-martin¨car" />
             </div>
             <footer class="team-drivers flexRow aMartin-BackgroundSec">
               <img onmouseover="mOverDriver('aMartinDriver2')" onmouseout="mOutDriver('aMartinDriver2')"
-                class="aMartinDriver1" src="F1/teams/aston-martin/drivers/ALOicon.png" alt="aston-martin driver 1" />
+                class="aMartinDriver1" src="media/teams/aston-martin/drivers/ALOicon.png" alt="aston-martin driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('aMartinDriver2')" onmouseout="mOutDriver('aMartinDriver2')"
                   class="aMartinDriver1 aMartin-Text">
@@ -301,7 +301,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('aMartinDriver1')" onmouseout="mOutDriver('aMartinDriver1')"
-                class="aMartinDriver2" src="F1/teams/aston-martin/drivers/STRicon.png" alt="aston-martin driver 2" />
+                class="aMartinDriver2" src="media/teams/aston-martin/drivers/STRicon.png" alt="aston-martin driver 2" />
             </footer>
           </div>
 
@@ -309,8 +309,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -322,12 +322,12 @@
         <article class="team-card haas-BackgroundPrim">
           <div class="front-cover haas-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/haas/team/HAicon.png" alt="haas logo" />
-              <img class="car-img" src="F1/teams/haas/team/haas-car.png" alt="haas car" />
+              <img class="team-icon" src="media/teams/haas/team/HAicon.png" alt="haas logo" />
+              <img class="car-img" src="media/teams/haas/team/haas-car.png" alt="haas car" />
             </div>
             <footer class="team-drivers flexRow haas-BackgroundSec">
               <img onmouseover="mOverDriver('haasDriver2')" onmouseout="mOutDriver('haasDriver2')" class="haasDriver1"
-                src="F1/teams/haas/drivers/MAGicon.png" alt="haas driver 1" />
+                src="media/teams/haas/drivers/MAGicon.png" alt="haas driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('haasDriver2')" onmouseout="mOutDriver('haasDriver2')"
                   class="haasDriver1 haas-Text">
@@ -339,7 +339,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('haasDriver1')" onmouseout="mOutDriver('haasDriver1')" class="haasDriver2"
-                src="F1/teams/haas/drivers/HULicon.png" alt="haas driver 2" />
+                src="media/teams/haas/drivers/HULicon.png" alt="haas driver 2" />
             </footer>
           </div>
 
@@ -347,8 +347,8 @@
             <table class="driverLabelTable">
               <tbody class="labels haas-Text"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information haas-Text"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats haas-Text"></tbody>
             </table>
           </div>
         </article>
@@ -360,12 +360,12 @@
         <article class="team-card aTauri-BackgroundPrim">
           <div class="front-cover aTauri-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/alphatauri/team/ATicon.png" alt="alphatauri logo" />
-              <img class="car-img" src="F1/teams/alphatauri/team/aTauri-car.png" alt="alphatauri car" />
+              <img class="team-icon" src="media/teams/alphatauri/team/ATicon.png" alt="alphatauri logo" />
+              <img class="car-img" src="media/teams/alphatauri/team/aTauri-car.png" alt="alphatauri car" />
             </div>
             <footer class="team-drivers flexRow aTauri-BackgroundSec">
               <img onmouseover="mOverDriver('aTauriDriver2')" onmouseout="mOutDriver('aTauriDriver2')"
-                class="aTauriDriver1" src="F1/teams/alphatauri/drivers/TSUicon.png" alt="alphatauri driver 1" />
+                class="aTauriDriver1" src="media/teams/alphatauri/drivers/TSUicon.png" alt="alphatauri driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('aTauriDriver2')" onmouseout="mOutDriver('aTauriDriver2')"
                   class="aTauriDriver1 aTauri-Text">
@@ -377,7 +377,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('aTauriDriver1')" onmouseout="mOutDriver('aTauriDriver1')"
-                class="aTauriDriver2" src="F1/teams/alphatauri/drivers/RICicon.png" alt="alphatauri driver 2" />
+                class="aTauriDriver2" src="media/teams/alphatauri/drivers/RICicon.png" alt="alphatauri driver 2" />
             </footer>
           </div>
 
@@ -385,8 +385,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -398,12 +398,12 @@
         <article class="team-card williams-BackgroundPrim">
           <div class="front-cover williams-Border">
             <div class="teamFrame jcCenter-aiCenter">
-              <img class="team-icon" src="F1/teams/williams/team/WIicon2.png" alt="williams logo" />
-              <img class="car-img" src="F1/teams/williams/team/will-car.png" alt="williams car" />
+              <img class="team-icon" src="media/teams/williams/team/WIicon2.png" alt="williams logo" />
+              <img class="car-img" src="media/teams/williams/team/will-car.png" alt="williams car" />
             </div>
             <footer class="team-drivers flexRow williams-BackgroundSec">
               <img onmouseover="mOverDriver('williamsDriver2')" onmouseout="mOutDriver('williamsDriver2')"
-                class="williamsDriver1" src="F1/teams/williams/drivers/ALBicon.png" alt="williams driver 1" />
+                class="williamsDriver1" src="media/teams/williams/drivers/ALBicon.png" alt="williams driver 1" />
               <div class="team-driver-names flexColumn jcCenter-aiCenter">
                 <h2 onmouseover="mOverDriver('williamsDriver2')" onmouseout="mOutDriver('williamsDriver2')"
                   class="williamsDriver1 williams-Text">
@@ -415,7 +415,7 @@
                 </h2>
               </div>
               <img onmouseover="mOverDriver('williamsDriver1')" onmouseout="mOutDriver('williamsDriver1')"
-                class="williamsDriver2" src="F1/teams/williams/drivers/SARicon.png" alt="williams driver 2" />
+                class="williamsDriver2" src="media/teams/williams/drivers/SARicon.png" alt="williams driver 2" />
             </footer>
           </div>
 
@@ -423,8 +423,8 @@
             <table class="driverLabelTable">
               <tbody class="labels"></tbody>
             </table>
-            <table class="driverInfo2">
-              <tbody class="information"></tbody>
+            <table class="driverStats2">
+              <tbody class="stats"></tbody>
             </table>
           </div>
         </article>
@@ -436,12 +436,12 @@
     <section id="socials" class="flexRow">
       <a href="https://www.facebook.com/Formula1" class="fa fa-facebook"></a>
       <a href="https://twitter.com/f1" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/f1/" class="fa fa-instagram"></a>
+      <a href="https://www.instagram.com/media/" class="fa fa-instagram"></a>
       <a href="https://www.youtube.com/F1" class="fa fa-youtube"></a>
     </section>
     <p>This is a student made website inspired by the authentic <a href="f1.com">Formula 1</a> website.</p>
 
-    <img src="F1/other/f1-whitelogo.png" alt="formula1 logo">
+    <img src="media/other/f1-whitelogo.png" alt="formula1 logo">
     <a href="mailto:sebastianjr.morocho@gmail.com">2023 Sebastian Morocho (semo5282)</a>
 
   </footer>
