@@ -846,7 +846,7 @@ td img{
   height: 100px;
 }
 
-.teamInfo {
+.teamStats {
   list-style-type: none;
   margin: 0;
   padding: 0px 30px;
@@ -1110,7 +1110,7 @@ td img{
 }
 
 .driverLabelTable,
-.driverInfo2 {
+.driverStats2 {
   border-collapse: collapse;
   width: fit-content;
   font-size: 10px;
@@ -1122,12 +1122,12 @@ td img{
   font-family: "f1FontBold";
 }
 
-.driverInfo2 {
+.driverStats2 {
   font-family: "TitilliumWebRegular";
 }
 
 .labels td,
-.information td {
+.stats td {
   height: 5px;
   vertical-align: bottom;
   padding: 5px 0px;
@@ -1443,7 +1443,7 @@ td img{
   }
   
   .driverLabelTable,
-  .driverInfo2 {
+  .driverStats2 {
     font-size: 15px;
   }
   
